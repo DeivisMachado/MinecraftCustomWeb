@@ -19,7 +19,7 @@ class MyHttpRequestHandler(http.server.SimpleHTTPRequestHandler):
                 print(f"Recebido comando para iniciar o servidor. Executando: {MINECRAFT_COMMAND}")
                 # Usamos Popen para não bloquear o servidor web.
                 # O servidor Minecraft vai rodar como um processo separado.
-                subprocess.Popen(MINECRAFT_COMMAND, shell=True, cwd=None) # cwd=None executa no diretório atual
+                subprocess.Popen(MINECRAFT_COMMAND, shell=True, cwd="ext/neoforgeserver") # Define o diretório de trabalho para o servidor
 
                 self.send_response(200)
                 self.send_header("Content-type", "application/json")
