@@ -41,3 +41,19 @@ body {
     transform: translateY(1px);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
+
+#start-btn.iniciando {
+    background-color: #f0ad4e; /* Laranja/Amarelo */
+    border-color: #eea236;
+    cursor: not-allowed;
+}
+
+#start-btn.online {
+    background-color: #337ab7; /* Azul */
+    border-color: #2e6da4;
+}
+
+#start-btn.terminar {
+    background-color: #d9534f; /* Vermelho */
+    border-color: #d43f3a;
+}
