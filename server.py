@@ -7,7 +7,7 @@ from functools import partial
 
 # O comando para iniciar o servidor Minecraft.
 # Ele será executado no diretório onde o server.py está.
-MINECRAFT_COMMAND = "java @user_jvm_args.txt @libraries/net/neoforged/neoforge/21.1.185/unix_args.txt nogui"
+MINECRAFT_COMMAND = "/usr/bin/java @user_jvm_args.txt @libraries/net/neoforged/neoforge/21.1.185/unix_args.txt nogui"
 
 class MyHttpRequestHandler(http.server.SimpleHTTPRequestHandler):
     def __init__(self, *args, **kwargs):
