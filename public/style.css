@@ -6,8 +6,8 @@ html, body {
 
 body {
     /* Imagem de fundo do Minecraft */
-    background-image: url('https://www.minecraft.net/content/dam/games/minecraft/key-art/Caves-and-Cliffs-part-2-key-art.jpg');
-    background-size: cover;
+    background-image: url('background.jpg');
+    
     background-position: center;
     background-repeat: no-repeat;
 
